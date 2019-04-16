@@ -17,12 +17,12 @@ namespace bullpgia {
 			myConstantString = constantString;
 		}
 
-		void learn(string s) ;
+		void learn(string s) override;
 
-		void startNewGame(uint uint) ;
+		void startNewGame(uint uint) override;
 
 
-		string guess()  ;
+		string guess() override ;
 
 
 
@@ -41,11 +41,11 @@ namespace bullpgia {
         {
 
         }*/
-		string guess() ;
+		string guess() override;
 
-		void learn(string s) ;
+		void learn(string s) override;
 
-		void startNewGame(uint uint) ;
+		void startNewGame(uint uint) override;
 
 	};
 }
