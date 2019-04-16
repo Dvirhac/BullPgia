@@ -5,7 +5,7 @@
 #include "Chooser.hpp"
 namespace bullpgia{
 
-    string Chooser::choose(uint length) {
+    /*string Chooser::choose(uint length) {
         return std::__cxx11::string();
-    }
+    }*/
 }
