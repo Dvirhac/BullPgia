@@ -4,16 +4,16 @@
 
 #ifndef BULLPGIA_GUESSER_HPP
 #define BULLPGIA_GUESSER_HPP
-#include "string"
+#include <string>
 using namespace std;
 typedef unsigned int uint;
 namespace bullpgia {
     class Guesser {
     public:
-        Guesser();
+
         virtual string guess();
-        void startNewGame(uint);
-        void learn(string);
+        virtual void startNewGame(uint);
+        virtual void learn(string);
     };
 }
 

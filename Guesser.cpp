@@ -6,4 +6,16 @@
 
 namespace bullpgia{
 
+
+   string Guesser::guess() {
+       return std::__cxx11::string();
+   }
+
+    void Guesser::startNewGame(uint) {
+
+    }
+
+    void Guesser::learn(string) {
+
+    }
 }

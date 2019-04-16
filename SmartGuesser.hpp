@@ -7,8 +7,12 @@
 
 #include "Guesser.hpp"
 namespace bullpgia {
-    class SmartGuesser : public Guesser {
+    class SmartGuesser : public bullpgia:: Guesser {
+    public:
 
+        string guess() override;
+        void learn(string) override;
+        void startNewGame(uint) override;
     };
 }
 

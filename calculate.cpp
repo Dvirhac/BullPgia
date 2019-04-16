@@ -3,9 +3,8 @@
 //
 
 #include "calculate.hpp"
-using namespace bullpgia;
 namespace bullpgia {
-    string calculateBullAndPgia(string s1, string s2) {
+    string  calculateBullAndPgia(string s1, string s2) {
         return 0;
     }
 }

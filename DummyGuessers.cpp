@@ -12,3 +12,10 @@ string RandomGuesser::guess() {
 }
 
 
+void ConstantGuesser::learn(string) {
+
+}
+
+void ConstantGuesser::startNewGame(uint) {
+
+}
