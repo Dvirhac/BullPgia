@@ -27,3 +27,5 @@ void ConstantGuesser::learn(string) {
 void ConstantGuesser::startNewGame(uint) {
 
 }
+
+
