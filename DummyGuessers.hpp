@@ -28,7 +28,7 @@ public:
  * RandomGuesser is a guesser that guesses a random string.
  */
 class RandomGuesser: public bullpgia::Guesser {
-	int length;
 	string guess() override;
 
+    uint length;
 };
