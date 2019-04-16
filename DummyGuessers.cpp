@@ -13,3 +13,22 @@ std::string r="";
 			return r;
 		}
 
+void bullpgia::RandomGuesser::learn(string s) {
+
+}
+
+void bullpgia::RandomGuesser::startNewGame(uint uint) {
+
+}
+
+void bullpgia::ConstantGuesser::learn(string s) {
+
+}
+
+void bullpgia::ConstantGuesser::startNewGame(uint uint) {
+
+}
+
+string bullpgia::ConstantGuesser::guess() {
+    return std::__cxx11::string();
+}

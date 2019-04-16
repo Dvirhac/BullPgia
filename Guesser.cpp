@@ -14,8 +14,9 @@ namespace bullpgia{
 void Guesser::startNewGame(uint) {
 
 }
-*/
+
 void Guesser::learn(string) {
 
 }
+ */
 }
