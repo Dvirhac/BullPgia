@@ -4,7 +4,7 @@
 
 
 
-std::string bullpgia:: RandomGuesser::guess() {
+std::string RandomGuesser::guess() {
 std::string r="";
 			for (uint i=0; i<this->length; ++i) {
 				char c = '0' + (rand()%10);
@@ -13,22 +13,18 @@ std::string r="";
 			return r;
 		}
 
-int bullpgia::RandomGuesser::learn(string s) {
-return 0;
+void RandomGuesser::learn(string s) {
 }
 
-int bullpgia::RandomGuesser::startNewGame(uint uint) {
-	return 0;
+void RandomGuesser::startNewGame(uint uint) {
 }
 
-int bullpgia::ConstantGuesser::learn(string s) {
-return 0;
+void ConstantGuesser::learn(string s) {
 }
 
-int bullpgia::ConstantGuesser::startNewGame(uint uint) {
-return 0;
+void ConstantGuesser::startNewGame(uint uint) {
 }
 
-string bullpgia::ConstantGuesser::guess() {
+string ConstantGuesser::guess() {
     return std::__cxx11::string();
 }

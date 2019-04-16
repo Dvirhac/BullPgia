@@ -4,7 +4,7 @@
 
 #ifndef BULLPGIA_GUESSER_HPP
 #define BULLPGIA_GUESSER_HPP
-#include <string>
+#include "string"
 using namespace std;
 typedef unsigned int uint;
 namespace bullpgia {
@@ -12,10 +12,9 @@ namespace bullpgia {
 
     public:
 
-
         virtual string guess()=0;
-        virtual int startNewGame(uint uint)=0;
-        virtual int learn(string s)=0;
+        virtual void startNewGame(uint uint)=0;
+        virtual void learn(string s)=0;
     };
 }
 

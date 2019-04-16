@@ -6,7 +6,7 @@
 #define BULLPGIA_SMARTGUESSER_HPP
 
 #include "Guesser.hpp"
-namespace bullpgia {
+
     class SmartGuesser : public bullpgia:: Guesser {
     public:
             SmartGuesser()
@@ -15,11 +15,11 @@ namespace bullpgia {
 
            }
 
-         int learn(string s) override;
-         int startNewGame(uint uint) override;
+        void learn(string s) override;
+        void startNewGame(uint uint) override;
          string guess() override;
 
     };
-}
+
 
 #endif //BULLPGIA_SMARTGUESSER_HPP

@@ -10,7 +10,7 @@ class ConstantChooser: public bullpgia::Chooser {
 		string myConstantString;
 	public:
 		ConstantChooser(const string& constantString)
-		//: Chooser()
+		: Chooser()
 		{
 		    myConstantString = constantString;
 		}
