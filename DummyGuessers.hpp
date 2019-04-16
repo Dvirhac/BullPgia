@@ -17,9 +17,9 @@ namespace bullpgia {
 			myConstantString = constantString;
 		}
 
-		void learn(string s) override;
+		int learn(string s) override;
 
-		void startNewGame(uint uint) override;
+		int startNewGame(uint uint) override;
 
 
 		string guess() override ;
@@ -43,9 +43,9 @@ namespace bullpgia {
         }
 		string guess() override;
 
-		void learn(string s) override;
+		int learn(string s) override;
 
-		void startNewGame(uint uint) override;
+		int startNewGame(uint uint) override;
 
 	};
 }

@@ -13,20 +13,20 @@ std::string r="";
 			return r;
 		}
 
-void bullpgia::RandomGuesser::learn(string s) {
-
+int bullpgia::RandomGuesser::learn(string s) {
+return 0;
 }
 
-void bullpgia::RandomGuesser::startNewGame(uint uint) {
-
+int bullpgia::RandomGuesser::startNewGame(uint uint) {
+	return 0;
 }
 
-void bullpgia::ConstantGuesser::learn(string s) {
-
+int bullpgia::ConstantGuesser::learn(string s) {
+return 0;
 }
 
-void bullpgia::ConstantGuesser::startNewGame(uint uint) {
-
+int bullpgia::ConstantGuesser::startNewGame(uint uint) {
+return 0;
 }
 
 string bullpgia::ConstantGuesser::guess() {

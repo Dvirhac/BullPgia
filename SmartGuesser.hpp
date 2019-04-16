@@ -15,8 +15,8 @@ namespace bullpgia {
 
            }
 
-         void learn(string s) override;
-         void startNewGame(uint uint) override;
+         int learn(string s) override;
+         int startNewGame(uint uint) override;
          string guess() override;
 
     };

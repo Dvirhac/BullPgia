@@ -5,14 +5,14 @@
 #include "SmartGuesser.hpp"
 
 
-void bullpgia::SmartGuesser::startNewGame(uint uint) {
-
+int bullpgia::SmartGuesser::startNewGame(uint uint) {
+return 0;
 }
 
 string bullpgia::SmartGuesser::guess() {
     return std::__cxx11::string();
 }
 
-void bullpgia::SmartGuesser::learn(string s) {
-
+int bullpgia::SmartGuesser::learn(string s) {
+    return 0;
 }
