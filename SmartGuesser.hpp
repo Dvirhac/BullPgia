@@ -10,7 +10,7 @@ namespace bullpgia {
     class SmartGuesser : public bullpgia:: Guesser {
     public:
         SmartGuesser()
-        :Guesser()
+     //   :Guesser()
         {
 
         }

@@ -11,7 +11,7 @@ class ConstantGuesser: public bullpgia::Guesser{
 	string myConstantString;
 public:
 	ConstantGuesser(const string& constantString)
-	:Guesser()
+	//:Guesser()
 	{
 		myConstantString = constantString;
 	}
@@ -29,10 +29,12 @@ public:
  */
 class RandomGuesser: public bullpgia::Guesser {
 	RandomGuesser()
-	:Guesser()
+	//:Guesser()
 	{
 
 	}
 	string guess() override;
+	void learn(string) override;
+	void startNewGame(uint) override;
 
 };

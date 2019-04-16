@@ -9,7 +9,11 @@ using std::string;
 class ConstantChooser: public bullpgia::Chooser {
 		string myConstantString;
 	public:
-		ConstantChooser(const string& constantString)  : Chooser(){ myConstantString = constantString; }
+		ConstantChooser(const string& constantString)
+		//: Chooser()
+		{
+		    myConstantString = constantString;
+		}
 		string choose(uint length) override {
 			return myConstantString;
 		}
