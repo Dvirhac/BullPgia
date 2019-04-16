@@ -12,7 +12,7 @@ namespace bullpgia {
 		string myConstantString;
 	public:
 		ConstantGuesser(const string &constantString)
-		//:Guesser()
+		:Guesser()
 		{
 			myConstantString = constantString;
 		}
@@ -36,11 +36,11 @@ namespace bullpgia {
 	class RandomGuesser : public bullpgia::Guesser {
 	public :
 		uint length;
-		/*RandomGuesser()
+		RandomGuesser()
         :Guesser()
         {
 
-        }*/
+        }
 		string guess() override;
 
 		void learn(string s) override;

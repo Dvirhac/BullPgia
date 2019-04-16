@@ -10,14 +10,14 @@ namespace bullpgia {
     class SmartGuesser : public bullpgia:: Guesser {
     public:
             SmartGuesser()
-        //   :Guesser()
+           :Guesser()
            {
 
            }
 
-        virtual void learn(string s) override;
-        virtual void startNewGame(uint uint) override;
-        virtual string guess() override;
+         void learn(string s) override;
+         void startNewGame(uint uint) override;
+         string guess() override;
 
     };
 }
