@@ -10,7 +10,7 @@ typedef unsigned int uint;
 namespace bullpgia {
     class Guesser {
     public:
-
+        uint length;
         virtual string guess();
         virtual void startNewGame(uint);
         virtual void learn(string);
