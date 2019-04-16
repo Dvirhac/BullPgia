@@ -11,7 +11,7 @@ class ConstantGuesser: public bullpgia::Guesser{
 	string myConstantString;
 public:
 	ConstantGuesser(const string& constantString)
-
+	:Guesser()
 	{
 		myConstantString = constantString;
 	}
@@ -28,6 +28,11 @@ public:
  * RandomGuesser is a guesser that guesses a random string.
  */
 class RandomGuesser: public bullpgia::Guesser {
+	RandomGuesser()
+	:Guesser()
+	{
+
+	}
 	string guess() override;
 
 };

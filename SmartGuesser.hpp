@@ -9,7 +9,11 @@
 namespace bullpgia {
     class SmartGuesser : public bullpgia:: Guesser {
     public:
+        SmartGuesser()
+        :Guesser()
+        {
 
+        }
         string guess() override;
         void learn(string) override;
         void startNewGame(uint) override;

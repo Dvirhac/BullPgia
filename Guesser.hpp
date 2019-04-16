@@ -9,11 +9,13 @@ using namespace std;
 typedef unsigned int uint;
 namespace bullpgia {
     class Guesser {
+
     public:
+
         uint length;
-        virtual string guess()=0;
-        virtual void startNewGame(uint)=0;
-        virtual void learn(string)=0;
+        virtual string guess() =0;
+        virtual void startNewGame(uint);
+        virtual void learn(string);
     };
 }
 
