@@ -6,10 +6,11 @@
  * @since  2019-04
  */
 
-#include "Chooser.hpp"
-#include "Guesser.hpp"
+/*#include "Chooser.hpp"
+#include "Guesser.hpp"*/
 #include "calculate.hpp"
-#include "calculate.hpp"
+#include "DummyChoosers.hpp"
+#include "DummyGuessers.hpp"
 
 
 namespace bullpgia {
