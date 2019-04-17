@@ -7,10 +7,11 @@
 
 #include "Guesser.hpp"
 
+
     class SmartGuesser : public bullpgia:: Guesser {
     public:
 
-        void learn(string s) override;
+        void learn(const string& s) override;
         void startNewGame(uint uint) override;
         string guess() override;
 

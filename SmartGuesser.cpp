@@ -10,6 +10,6 @@ std:: string SmartGuesser::guess() {
 
 }
 
-void SmartGuesser::learn(string s) {}
+void SmartGuesser::learn(const string& s) {}
 void SmartGuesser::startNewGame(uint uint) {}
 

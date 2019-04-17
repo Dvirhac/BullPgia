@@ -18,7 +18,7 @@ using std::string;
 		string guess() override{
 		    return myConstantString;
 		}
-		void learn(string s) override;
+		void learn(const string& s) override;
 		void startNewGame(uint uint) override;
 
 	};
@@ -33,7 +33,7 @@ using std::string;
 
 		string guess() override;
 
-		void learn(string s) override;
+		void learn(const string& s) override;
 
 		void startNewGame(uint uint) override;
 

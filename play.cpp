@@ -6,9 +6,8 @@
  */
 
 #include "play.hpp"
-#include "calculate.hpp"
-
 #include <string>
+
 namespace bullpgia {
 
 	uint  play(Chooser& chooser, Guesser& guesser, uint length, uint maxTurns) {

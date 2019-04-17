@@ -14,7 +14,7 @@ namespace bullpgia {
         uint length=0;
         virtual string guess()=0;
         virtual void startNewGame(uint uint){}
-        virtual void learn( string s){}
+        virtual void learn(const string& s){}
     };
 }
 
