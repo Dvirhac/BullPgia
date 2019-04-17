@@ -6,6 +6,8 @@
 #define BULLPGIA_CALCULATE_HPP
 
 
+#include "Guesser.hpp"
+#include "Chooser.hpp"
 #include "DummyGuessers.hpp"
 #include "DummyChoosers.hpp"
 #include "SmartGuesser.hpp"
