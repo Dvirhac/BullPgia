@@ -14,7 +14,7 @@
 
 namespace bullpgia {
 
-         string calculateBullAndPgia(string s1, string s2);
+         std:: string calculateBullAndPgia(string s1, string s2);
     }
 
 
