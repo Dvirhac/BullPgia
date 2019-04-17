@@ -5,8 +5,10 @@
 #ifndef BULLPGIA_CALCULATE_HPP
 #define BULLPGIA_CALCULATE_HPP
 
-#include "Chooser.hpp"
-#include "Guesser.hpp"
+
+#include "DummyGuessers.hpp"
+#include "DummyChoosers.hpp"
+#include "SmartGuesser.hpp"
 
 
 
