@@ -26,5 +26,5 @@ void ConstantGuesser::startNewGame(uint uint) {
 }
 
 string ConstantGuesser::guess() {
-    return std::__cxx11::string();
+	return std::__cxx11::string();
 }

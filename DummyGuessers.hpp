@@ -10,19 +10,16 @@ using std::string;
 	class ConstantGuesser : public bullpgia::Guesser {
 		string myConstantString;
 	public:
-		ConstantGuesser(const string &constantString)
-		:Guesser()
+		ConstantGuesser (const string &constantString)
 		{
 			myConstantString = constantString;
 		}
 
+		string guess() override;
+
 		void learn(string s) override;
 
 		void startNewGame(uint uint) override;
-
-
-		string guess() override ;
-
 
 
 	};

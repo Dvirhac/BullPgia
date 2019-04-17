@@ -4,18 +4,4 @@
 
 #include "Guesser.hpp"
 
-namespace bullpgia{
 
-
-    string Guesser::guess() {
-        return std::__cxx11::string();
-    }
-
-    void Guesser::startNewGame(uint uint) {
-
-    }
-
-    void Guesser::learn(string s) {
-
-    }
-}
