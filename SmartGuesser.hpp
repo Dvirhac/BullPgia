@@ -9,10 +9,6 @@
 
     class SmartGuesser : public bullpgia:: Guesser {
     public:
-            SmartGuesser()
-           {
-
-           }
 
         void learn(string s) override;
         void startNewGame(uint uint) override;
