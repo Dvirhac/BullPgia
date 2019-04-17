@@ -3,7 +3,8 @@
 //
 
 #include "SmartGuesser.hpp"
-
+using std::string;
+using namespace bullpgia;
 std:: string SmartGuesser::guess() {
    string st;
     return  st;

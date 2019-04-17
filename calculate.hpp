@@ -1,18 +1,7 @@
-//
-// Created by Dvir on 16/04/2019.
-//
+#include <string>
 
-#ifndef BULLPGIA_CALCULATE_HPP
-#define BULLPGIA_CALCULATE_HPP
+using namespace std;
 
-
-#include "Chooser.hpp"
-#include "Guesser.hpp"
-
-
-namespace bullpgia {
-          string calculateBullAndPgia(string s1, string s2);
-    }
-
-
-#endif //BULLPGIA_CALCULATE_HPP
+namespace bullpgia{
+    string calculateBullAndPgia(string s1, string s2);
+}

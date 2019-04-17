@@ -7,10 +7,7 @@
  */
 
 
-#include "calculate.hpp"
-#include "DummyChoosers.hpp"
-#include "DummyGuessers.hpp"
-#include "SmartGuesser.hpp"
+
 #include "Chooser.hpp"
 #include "Guesser.hpp"
 

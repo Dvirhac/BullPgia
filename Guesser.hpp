@@ -1,7 +1,7 @@
 //
 // Created by Dvir on 16/04/2019.
 //
-
+#pragma once
 #ifndef BULLPGIA_GUESSER_HPP
 #define BULLPGIA_GUESSER_HPP
 #include "string"

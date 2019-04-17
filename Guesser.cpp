@@ -4,4 +4,10 @@
 
 #include "Guesser.hpp"
 
+using namespace bullpgia;
+
+void learn (string s){
+}
+void startNewGame(uint uint){
+}
 
