@@ -4,14 +4,12 @@
 
 #include "SmartGuesser.hpp"
 
-void SmartGuesser::startNewGame(uint uint) {
-}
-
 std:: string SmartGuesser::guess() {
    string st;
     return  st;
 
 }
 
-void SmartGuesser::learn(string s) {
-}
+void SmartGuesser::learn(string s) {}
+void SmartGuesser::startNewGame(uint uint) {}
+

@@ -15,16 +15,11 @@ using std::string;
 		{
 			myConstantString = constantString;
 		}
-
 		string guess() override{
 		    return myConstantString;
-
 		}
-
 		void learn(string s) override;
-
 		void startNewGame(uint uint) override;
-
 
 	};
 

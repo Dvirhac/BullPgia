@@ -1,5 +1,5 @@
 #include "DummyGuessers.hpp"
-#include <stdlib.h>
+#include <cstdlib>
 #include "string"
 
 
@@ -12,17 +12,9 @@ std::string r="";
 			return r;
 		}
 
-void RandomGuesser::learn(string s) {
-}
-
-void RandomGuesser::startNewGame(uint uint) {
-}
-
-
-void ConstantGuesser::learn(string s) {
-}
-
-void ConstantGuesser::startNewGame(uint uint) {
-}
+void RandomGuesser::learn(string s) {}
+void RandomGuesser::startNewGame(uint uint) {}
+void ConstantGuesser::learn(string s) {}
+void ConstantGuesser::startNewGame(uint uint) {}
 
 
