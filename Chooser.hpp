@@ -1,7 +1,7 @@
 //
 // Created by Dvir on 16/04/2019.
 //
-
+#pragma once
 #ifndef BULLPGIA_CHOOSER_HPP
 #define BULLPGIA_CHOOSER_HPP
 #include "string"

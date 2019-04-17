@@ -5,7 +5,7 @@
 #include "calculate.hpp"
 
 namespace bullpgia {
-    std :: string calculateBullAndPgia(string s1, string s2) {
+      string bullpgia::calculateBullAndPgia(string s1, string s2) {
         string st;
         return st;
     }

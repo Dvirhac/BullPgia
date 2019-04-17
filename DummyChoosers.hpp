@@ -14,8 +14,7 @@ class ConstantChooser: public bullpgia::Chooser {
 		    myConstantString = constantString;
 		}
 		string choose(uint length) override {
-			string st;
-			return st;
+			return myConstantString;
 		}
 };
 
