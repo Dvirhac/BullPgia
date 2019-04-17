@@ -6,6 +6,7 @@
  */
 
 #include "play.hpp"
+#include "calculate.hpp"
 #include <string>
 
 namespace bullpgia {
