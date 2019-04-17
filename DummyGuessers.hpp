@@ -18,8 +18,7 @@ using std::string;
 
 		string guess() override{
 		    return myConstantString;
-		   /* string st;
-		    return st;*/
+
 		}
 
 		void learn(string s) override;

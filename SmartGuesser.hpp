@@ -16,7 +16,7 @@
 
         void learn(string s) override;
         void startNewGame(uint uint) override;
-         string guess() override;
+        string guess() override;
 
     };
 
