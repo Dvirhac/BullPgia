@@ -3,9 +3,7 @@
 //
 
 #include "calculate.hpp"
-#include "SmartGuesser.hpp"
-#include "DummyChoosers.hpp"
-#include "DummyGuessers.hpp"
+
 namespace bullpgia {
     std :: string calculateBullAndPgia(string s1, string s2) {
         string st;
