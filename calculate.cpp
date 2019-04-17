@@ -5,6 +5,7 @@
 #include "calculate.hpp"
 namespace bullpgia {
     string  calculateBullAndPgia(string s1, string s2) {
-        return 0;
+        string st;
+        return st;
     }
 }
