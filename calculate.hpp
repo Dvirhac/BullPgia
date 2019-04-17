@@ -13,7 +13,6 @@
 
 
 namespace bullpgia {
-
          std:: string calculateBullAndPgia(string s1, string s2);
     }
 
