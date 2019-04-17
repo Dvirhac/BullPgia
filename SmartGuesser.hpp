@@ -7,7 +7,7 @@
 
 #include "Guesser.hpp"
 #include "string"
-#include "calculate.hpp"
+//#include "calculate.hpp"
 
     namespace bullpgia {
         class SmartGuesser : public bullpgia::Guesser {
