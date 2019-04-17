@@ -7,7 +7,7 @@
 namespace bullpgia{
 
 
-    /*string Guesser::guess() {
+    string Guesser::guess() {
         return std::__cxx11::string();
     }
 
@@ -17,5 +17,5 @@ namespace bullpgia{
 
     void Guesser::learn(string s) {
 
-    }*/
+    }
 }
