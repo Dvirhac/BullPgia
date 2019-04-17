@@ -35,7 +35,7 @@ using std::string;
  */
 	class RandomGuesser : public bullpgia::Guesser {
 	public :
-		uint length;
+
 
 		string guess() override;
 
