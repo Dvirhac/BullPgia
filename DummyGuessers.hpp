@@ -1,5 +1,6 @@
 #pragma once
 #include "Guesser.hpp"
+
 using std::string;
 
 
@@ -15,7 +16,11 @@ using std::string;
 			myConstantString = constantString;
 		}
 
-		string guess() override;
+		string guess() override{
+		    return myConstantString;
+		   /* string st;
+		    return st;*/
+		}
 
 		void learn(string s) override;
 
@@ -31,11 +36,7 @@ using std::string;
 	class RandomGuesser : public bullpgia::Guesser {
 	public :
 		uint length;
-		RandomGuesser()
-        :Guesser()
-        {
 
-        }
 		string guess() override;
 
 		void learn(string s) override;

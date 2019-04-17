@@ -4,12 +4,13 @@
 
 #include "SmartGuesser.hpp"
 
-
 void SmartGuesser::startNewGame(uint uint) {
 }
 
-string SmartGuesser::guess() {
-    return std::__cxx11::string();
+std:: string SmartGuesser::guess() {
+   string st;
+    return  st;
+
 }
 
 void SmartGuesser::learn(string s) {

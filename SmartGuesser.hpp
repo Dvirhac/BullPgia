@@ -10,7 +10,6 @@
     class SmartGuesser : public bullpgia:: Guesser {
     public:
             SmartGuesser()
-           :Guesser()
            {
 
            }
