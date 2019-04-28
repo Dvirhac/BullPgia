@@ -3,5 +3,5 @@
 using namespace std;
 
 namespace bullpgia{
-    string calculateBullAndPgia(string s1, string s2);
+    string calculateBullAndPgia(string chooser, string guesser);
 }
