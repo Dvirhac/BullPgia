@@ -44,11 +44,18 @@ int main() {
 		.CHECK_OUTPUT(calculateBullAndPgia("12345","56789"), "0,1")
 		.CHECK_OUTPUT(calculateBullAndPgia("987654","123456"), "1,2")
 		.CHECK_OUTPUT(calculateBullAndPgia("2223334","3332224"), "1,6")
-		;
+		.CHECK_OUTPUT(calculateBullAndPgia("332244","224433"), "0,6")
+		.CHECK_OUTPUT(calculateBullAndPgia("111","111"), "3,0")
+		.CHECK_OUTPUT(calculateBullAndPgia("122334","433224"), "1,4")
+		.CHECK_OUTPUT(calculateBullAndPgia("77775888","77779888"), "7,0")
+		.CHECK_OUTPUT(calculateBullAndPgia("1131122","2231122"), "5,0")
+
+
+                ;
 
 		testcase.setname("Play with dummy choosers and guessers")
 		.CHECK_EQUAL(play(c1234, g1234, 4, 100), 1)      // guesser wins in one turn.
-		.CHECK_EQUAL(play(c1234, g9999, 4, 100), 101)    // guesser loses by running out of turns 
+		.CHECK_EQUAL(play(c1234, g9999, 4, 100), 101)    // guesser loses by running out of turns
 		.CHECK_EQUAL(play(c1234, g12345, 4, 100), 101)   // guesser loses technically by making an illegal guess (too long).
 		.CHECK_EQUAL(play(c12345, g1234, 4, 100), 0)     // chooser loses technically by choosing an illegal number (too long).
 		;
