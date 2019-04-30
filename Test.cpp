@@ -34,6 +34,7 @@ int main() {
 
 
 		testcase.setname("Calculate bull and pgia")
+		.CHECK_OUTPUT(calculateBullAndPgia("2552","2222"), "2,0")
 		.CHECK_OUTPUT(calculateBullAndPgia("1234","1234"), "4,0")      // 4 bull, 0 pgia
 		.CHECK_OUTPUT(calculateBullAndPgia("1256","1278"), "2,0")      // 0 bull, 4 pgia
 		.CHECK_OUTPUT(calculateBullAndPgia("3456","1298"), "0,0")
@@ -49,9 +50,16 @@ int main() {
 		.CHECK_OUTPUT(calculateBullAndPgia("122334","433224"), "1,4")
 		.CHECK_OUTPUT(calculateBullAndPgia("77775888","77779888"), "7,0")
 		.CHECK_OUTPUT(calculateBullAndPgia("1131122","2231122"), "5,0")
+		.CHECK_OUTPUT(calculateBullAndPgia("2213","4562"), "0,1")
+		.CHECK_OUTPUT(calculateBullAndPgia("4522","2213"), "0,2")
+		.CHECK_OUTPUT(calculateBullAndPgia("2552","5222"), "1,2")
+		.CHECK_OUTPUT(calculateBullAndPgia("2552","5222"), "1,2")
+		.CHECK_OUTPUT(calculateBullAndPgia("5222","2552"), "1,2")
 
 
-                ;
+
+		;
+
 
 		testcase.setname("Play with dummy choosers and guessers")
 		.CHECK_EQUAL(play(c1234, g1234, 4, 100), 1)      // guesser wins in one turn.
