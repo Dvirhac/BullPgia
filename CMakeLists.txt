@@ -8,9 +8,9 @@ add_executable(BullPgia
         DummyChoosers.cpp DummyChoosers.hpp
         DummyGuessers.cpp DummyGuessers.hpp
         play.cpp play.hpp
-        Chooser.cpp Chooser.hpp
-        Guesser.cpp Guesser.hpp
+        Chooser.hpp
+        Guesser.hpp
         calculate.cpp calculate.hpp
         SmartGuesser.cpp SmartGuesser.hpp
 
-        )
+        CompileError1.cpp CompileError2.cpp)
