@@ -12,9 +12,9 @@ std::string r="";
 			return r;
 		}
 
-void RandomGuesser::learn(const string& s) {}
+void RandomGuesser::learn(const string& result) {}
 void RandomGuesser::startNewGame(uint uint) {}
-void ConstantGuesser::learn(const string& s) {}
+void ConstantGuesser::learn(const string& result) {}
 void ConstantGuesser::startNewGame(uint uint) {}
 
 

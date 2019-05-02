@@ -7,19 +7,29 @@
 
 #include "Guesser.hpp"
 #include "string"
-//#include "calculate.hpp"
+#include "calculate.hpp"
+#include "set"
+#include "iterator"
 
-    namespace bullpgia {
-        class SmartGuesser : public bullpgia::Guesser {
-        public:
+namespace bullpgia {
 
-            void learn(const string &s) override;
+    class SmartGuesser : public bullpgia::Guesser {
 
-            void startNewGame(uint uint) override;
+    public:
 
-            string guess() override;
+        void learn(const string &result) override;
 
-        };
-    }
+        void startNewGame(uint uint) override;
+
+        string guess() override;
+
+    private:
+        set<string> allOptions;
+        string myGuess = "";
+        bool firstGuess;
+        uint length = 0;
+
+    };
+}
 
 #endif //BULLPGIA_SMARTGUESSER_HPP

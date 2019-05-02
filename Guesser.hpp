@@ -4,7 +4,7 @@
 #pragma once
 #ifndef BULLPGIA_GUESSER_HPP
 #define BULLPGIA_GUESSER_HPP
-#include "string"
+#include "iostream"
 using namespace std;
 typedef unsigned int uint;
 namespace bullpgia {
@@ -14,7 +14,7 @@ namespace bullpgia {
         uint length=0;
         virtual string guess()=0;
         virtual void startNewGame(uint uint){}
-        virtual void learn(const string& s){}
+        virtual void learn(const string& result){}
     };
 }
 

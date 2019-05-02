@@ -12,5 +12,4 @@ add_executable(BullPgia
         Guesser.hpp
         calculate.cpp calculate.hpp
         SmartGuesser.cpp SmartGuesser.hpp
-
-        CompileError1.cpp CompileError2.cpp)
+        )
