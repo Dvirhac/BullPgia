@@ -28,7 +28,7 @@ int main() {
     if (signal == 0) {
 
         // BASIC TESTS - DO NOT CHANGE
-        ConstantChooser c1234{"1234"},c12{"12"}, c12345{"12345"}, c9999{"9999"}, c012{"012"},c0000{"0000"}, c123{"123"} ;
+        ConstantChooser c1234{"1234"}, c12345{"12345"}, c9999{"9999"}, c012{"012"},c0000{"0000"}, c123{"123"} ;
         ConstantGuesser g1234{"1234"}, g12345{"12345"}, g9999{"9999"} , g0000{"0000"}, g123{"123"}, g5555{"5555"}, g124{"124"} ;
 
 
@@ -111,12 +111,12 @@ int main() {
         SmartGuesser smarty;
         for (uint i=0; i<100; ++i) {
             testcase.CHECK_EQUAL(play(randy, smarty, 4, 100) <= 100, true);  // smarty should always win in at most 100 turns!
-           // testcase.CHECK_EQUAL(play(randy, smarty, 4, 100) > 100, false);  // smarty should always win in at most 100 turns!
+            testcase.CHECK_EQUAL(play(randy, smarty, 4, 100) > 100, false);  // smarty should always win in at most 100 turns!
         }
 
         testcase.setname("Our play with smart guesser test")
 
-                .CHECK_EQUAL(play(c1234,smarty,4,100) <= 100 , true)
+                .CHECK_EQUAL(play(c123,smarty,3,100) <= 100 , true)
                 .CHECK_EQUAL(play(c12345,smarty,4,100) == 0 , true)
                 .CHECK_EQUAL(play(c12345,smarty,4,100) != 0 , false)
                 .CHECK_EQUAL(play(c0000,smarty,4,100)<= 100, true);
