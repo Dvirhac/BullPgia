@@ -46,11 +46,6 @@ void SmartGuesser::learn(const string& result) {
         else runner++;
     }
 
-   /* for (string currString : allOptions){
-        string _ans = calculateBullAndPgia(currString, myGuess);
-        if (_ans != result)
-            allOptions.erase(currString);
-    }*/
 }
 
 void SmartGuesser::startNewGame(uint length) {
@@ -71,8 +66,9 @@ void SmartGuesser::startNewGame(uint length) {
                 allOptions.insert(currentString);
                 currentString = "";
             }
-            break;
+
         }
+            break;
         case 2: {
             for (int i = 0; i <= 9; i++) {
                 for (int j = 0; j <= 9; j++) {
@@ -83,8 +79,9 @@ void SmartGuesser::startNewGame(uint length) {
 
 
             }
-            break;
+
         }
+            break;
         case 3 : {
             for (int i = 0; i <= 9; i++) {
                 for (int j = 0; j <= 9; j++) {
@@ -96,8 +93,9 @@ void SmartGuesser::startNewGame(uint length) {
                 }
 
             }
-            break;
+
         }
+            break;
         case 4:{
             for (int i = 0 ; i <= 9; i  ++){
                 for (int j = 0 ; j <= 9; j  ++){
@@ -110,8 +108,9 @@ void SmartGuesser::startNewGame(uint length) {
                     }
                 }
             }
-            break;
+
         }
+            break;
     }
 }
 
