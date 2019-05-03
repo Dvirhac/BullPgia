@@ -13,8 +13,8 @@ std::string r="";
 		}
 
 void RandomGuesser::learn(const string& result) {}
-void RandomGuesser::startNewGame(uint uint) {}
+void RandomGuesser::startNewGame(uint length) {}
 void ConstantGuesser::learn(const string& result) {}
-void ConstantGuesser::startNewGame(uint uint) {}
+void ConstantGuesser::startNewGame(uint length) {}
 
 

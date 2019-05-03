@@ -19,7 +19,7 @@ using std::string;
 		    return myConstantString;
 		}
 		void learn(const string& result) override;
-		void startNewGame(uint uint) override;
+		void startNewGame(uint length) override;
 
 	};
 
@@ -35,7 +35,7 @@ using std::string;
 
 		void learn(const string& s) override;
 
-		void startNewGame(uint uint) override;
+		void startNewGame(uint length) override;
 
 	};
 

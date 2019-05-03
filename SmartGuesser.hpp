@@ -19,7 +19,7 @@ namespace bullpgia {
 
         void learn(const string &result) override;
 
-        void startNewGame(uint uint) override;
+        void startNewGame(uint length) override;
 
         string guess() override;
 
@@ -27,7 +27,7 @@ namespace bullpgia {
         set<string> allOptions;
         string myGuess = "";
         bool firstGuess;
-        uint length = 0;
+        //uint length = 0;
 
     };
 }

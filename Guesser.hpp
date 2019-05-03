@@ -11,10 +11,13 @@ namespace bullpgia {
     class Guesser {
 
     public:
-        uint length=0;
+
         virtual string guess()=0;
         virtual void startNewGame(uint uint){}
         virtual void learn(const string& result){}
+
+    protected:
+        uint length=0;
     };
 }
 
