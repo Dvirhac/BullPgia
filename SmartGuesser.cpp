@@ -27,9 +27,9 @@ std:: string SmartGuesser::guess() {
 
     else {
         int index = rand()%allOptions.size();
-        auto first = allOptions.begin();
-        advance(first, index);
-        myGuess = *first;
+        auto chosen = allOptions.begin();
+        advance(chosen, index);
+        myGuess = *chosen;
         return myGuess;
     }
 
@@ -37,32 +37,33 @@ std:: string SmartGuesser::guess() {
 }
 
 void SmartGuesser::learn(const string& result) {
-
+    string _ans = "";
     auto runner = allOptions.begin();
     while (runner != allOptions.end()){
-        string _ans = calculateBullAndPgia(*runner, myGuess);
+        _ans = calculateBullAndPgia(*runner, myGuess);
         if (_ans != result)
             runner = allOptions.erase(runner);
         else runner++;
     }
 
-    for (string currString : allOptions){
+   /* for (string currString : allOptions){
         string _ans = calculateBullAndPgia(currString, myGuess);
         if (_ans != result)
             allOptions.erase(currString);
-    }
+    }*/
 }
 
-void SmartGuesser::startNewGame(uint uint) {
+void SmartGuesser::startNewGame(uint length) {
     firstGuess = true;
     allOptions.clear();
-    length = uint;
+    this->length = length;
 
-    if (length > 4 ) throw "invalid length";
+    if (length > 4 )
+        throw invalid_argument("invalid input");
 
     string currentString = "";
 
-    switch (uint) {
+    switch (length) {
         case 1: {
             for (int i = 0; i <= 9; i++) {
 
@@ -70,6 +71,7 @@ void SmartGuesser::startNewGame(uint uint) {
                 allOptions.insert(currentString);
                 currentString = "";
             }
+            break;
         }
         case 2: {
             for (int i = 0; i <= 9; i++) {
@@ -81,6 +83,7 @@ void SmartGuesser::startNewGame(uint uint) {
 
 
             }
+            break;
         }
         case 3 : {
             for (int i = 0; i <= 9; i++) {
@@ -93,6 +96,7 @@ void SmartGuesser::startNewGame(uint uint) {
                 }
 
             }
+            break;
         }
         case 4:{
             for (int i = 0 ; i <= 9; i  ++){
@@ -106,6 +110,7 @@ void SmartGuesser::startNewGame(uint uint) {
                     }
                 }
             }
+            break;
         }
     }
 }
