@@ -61,6 +61,8 @@ void SmartGuesser::startNewGame(uint length) {
         string currentString = "";
 
         switch (length) {
+            case 0:
+                return;
             case 1: {
                 for (int i = 0; i <= 9; i++) {
 
