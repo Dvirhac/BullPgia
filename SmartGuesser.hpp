@@ -8,7 +8,7 @@
 #include "Guesser.hpp"
 #include "string"
 #include "calculate.hpp"
-#include "set"
+#include "list"
 #include "iterator"
 
 namespace bullpgia {
@@ -24,7 +24,7 @@ namespace bullpgia {
         string guess() override;
 
     private:
-        set<string> allOptions;
+        list<string> allOptions;
         string myGuess = "";
         bool firstGuess;
         //uint length = 0;

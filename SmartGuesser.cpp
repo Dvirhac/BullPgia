@@ -52,6 +52,7 @@ void SmartGuesser::startNewGame(uint length) {
     firstGuess = true;
     allOptions.clear();
     this->length = length;
+    list<string>::iterator it = allOptions.begin();
 
     if (length > 4 )
         throw invalid_argument("invalid input");
@@ -63,54 +64,58 @@ void SmartGuesser::startNewGame(uint length) {
             for (int i = 0; i <= 9; i++) {
 
                 currentString += to_string(i);
-                allOptions.insert(currentString);
+                allOptions.insert(it,currentString);
                 currentString = "";
+                advance(it,1);
             }
-
-        }
             break;
+        }
+
         case 2: {
             for (int i = 0; i <= 9; i++) {
                 for (int j = 0; j <= 9; j++) {
                     currentString += to_string(i) + to_string(j);
-                    allOptions.insert(currentString);
+                    allOptions.insert(it,currentString);
                     currentString = "";
+                    advance(it,1);
                 }
 
 
             }
-
-        }
             break;
+        }
+
         case 3 : {
             for (int i = 0; i <= 9; i++) {
                 for (int j = 0; j <= 9; j++) {
                     for (int z = 0; z <= 9; z++) {
                         currentString += to_string(i) + to_string(j) + to_string(z) ;
-                        allOptions.insert(currentString);
+                        allOptions.insert(it,currentString);
                         currentString = "";
+                        advance(it,1);
                     }
                 }
 
             }
-
-        }
             break;
+        }
+
         case 4:{
             for (int i = 0 ; i <= 9; i  ++){
                 for (int j = 0 ; j <= 9; j  ++){
                     for (int z = 0 ; z <= 9; z  ++){
                         for (int q = 0 ; q <= 9; q  ++){
                             currentString += to_string(i) + to_string(j) + to_string(z) + to_string(q);
-                            allOptions.insert(currentString);
+                            allOptions.insert(it,currentString);
                             currentString = "";
+                            advance(it,1);
                         }
                     }
                 }
             }
-
-        }
             break;
+        }
+
     }
 }
 
