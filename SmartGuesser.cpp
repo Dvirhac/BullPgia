@@ -67,7 +67,7 @@ void SmartGuesser::startNewGame(uint length) {
                     currentString += to_string(i);
                     allOptions.insert(it, currentString);
                     currentString = "";
-                    advance(it, 1);
+                    it++;
                 }
                 break;
             }
@@ -78,7 +78,7 @@ void SmartGuesser::startNewGame(uint length) {
                         currentString += to_string(i) + to_string(j);
                         allOptions.insert(it, currentString);
                         currentString = "";
-                        advance(it, 1);
+                        it++;
                     }
 
 
@@ -93,7 +93,7 @@ void SmartGuesser::startNewGame(uint length) {
                             currentString += to_string(i) + to_string(j) + to_string(z);
                             allOptions.insert(it, currentString);
                             currentString = "";
-                            advance(it, 1);
+                            it++;
                         }
                     }
 
@@ -109,7 +109,7 @@ void SmartGuesser::startNewGame(uint length) {
                                 currentString += to_string(i) + to_string(j) + to_string(z) + to_string(q);
                                 allOptions.insert(it, currentString);
                                 currentString = "";
-                                advance(it, 1);
+                                it++;
                             }
                         }
                     }
