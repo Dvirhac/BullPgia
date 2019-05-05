@@ -37,7 +37,7 @@ namespace bullpgia {
                         if (chooser.at(i) == guesser.at(j)) { //check for hits
                             char temp = chooser.at(i);
                             int temp2 = (int) temp - 48;
-                            if (check[temp2] != 0) {
+                            if (check[temp2] > 0) {
                                 pgia++;
                                 check[temp2]--;
                                 j = guesser.length();
