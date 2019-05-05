@@ -1,49 +1,61 @@
-#include "calculate.hpp"
+//
+// Created by Dvir on 16/04/2019.
+//
+
 #include <iostream>
-
-using namespace std;
-using namespace bullpgia;
-
+#include "calculate.hpp"
+using std::string;
 namespace bullpgia {
-    string calculateBullAndPgia(string choice, string guess) {
-        int bull = countAndRemoveBull(choice, guess);
-        int pgia = countPgia(choice, guess);
-        string result = to_string(bull) + ',' + to_string(pgia);
-        return result;
-    }
-
-    int countAndRemoveBull(string& choice, string& guess) {
-        string newChoice = choice;
-        string newGuess = guess;
-        int ci = 0;
-        int gi = 0;
-        int count = 0;
-        for (int i=0;i<newChoice.length();i++) {
-            if (newChoice[i] == newGuess[i]) {
-                guess = guess.substr(0, gi) + guess.substr(gi+1);
-                choice = choice.substr(0, ci) + choice.substr(ci+1);
-                ci--; gi--;
-                count++;
-            }
-            ci++; gi++;
+    string calculateBullAndPgia(string chooser, string guesser) {
+        string result = "";
+        int bull = 0;
+        int pgia = 0;
+        int check[10];
+        for (int i = 0; i < 10; i++) {
+            check[i] = 0;
         }
-        return count;
-    }
 
-    int countPgia(string& choice, string& guess) {
-        int count = 0;
-        for (int i=0;i<guess.length();i++) {
-            for (int j=0;j<choice.length();j++) {
-                if (guess[i] == choice[j]) {
-                    count++;
-                    guess = guess.substr(0, i) + guess.substr(i+1);
-                    choice = choice.substr(0, j) + choice.substr(j+1);
+
+
+            for (int i = 0; i < chooser.length(); i++) {
+                if (chooser.at(i) == guesser.at(i)) {
+                    bull++;
+                    chooser.erase(i, 1);
+                    guesser.erase(i, 1);
                     i--;
-                    break;
                 }
             }
+
+            for (int i = 0; i < guesser.size(); i++) {
+                char tempChar = guesser.at(i);
+                int tempInt = (int) tempChar - 48;
+                check[tempInt]++;
+            }
+
+
+            for (int i = 0; i < chooser.size(); i++) {
+                for (int j = 0; j < guesser.size(); j++) {
+                    if (chooser.at(i) == guesser.at(j)) { //check for hits
+                        char temp = chooser.at(i);
+                        int temp2 = (int) temp - 48;
+                        if (check[temp2] != 0) {
+                            pgia++;
+                            check[temp2]--;
+                            j = guesser.length();
+                            continue;
+                        }
+
+                    }
+
+                }
+
+
+            }
+
+            result = to_string(bull) + "," + to_string(pgia);
+
+            return result;
         }
 
-        return count;
     }
-}
+
