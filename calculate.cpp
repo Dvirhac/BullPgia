@@ -16,7 +16,6 @@ namespace bullpgia {
         }
 
 
-        if (chooser.size() == guesser.size()) {
 
             for (int i = 0; i < chooser.length(); i++) {
                 if (chooser.at(i) == guesser.at(i)) {
@@ -57,9 +56,7 @@ namespace bullpgia {
 
             return result;
         }
-        else {
-            return "1,0";
-        }
+
     }
 
 }
