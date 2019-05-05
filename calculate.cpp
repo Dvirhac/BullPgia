@@ -58,7 +58,7 @@ namespace bullpgia {
             return result;
         }
         else {
-            return "";
+            return "1,0";
         }
     }
 
