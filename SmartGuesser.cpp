@@ -42,9 +42,10 @@ void SmartGuesser::learn(const string& result) {
     while (runner != allOptions.end()){
         _ans = calculateBullAndPgia(*runner, myGuess);
         if (_ans != result)
-            runner = allOptions.erase(runner);
+            allOptions.remove(*runner);
         else runner++;
     }
+
 
 }
 
