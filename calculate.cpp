@@ -16,7 +16,7 @@ namespace bullpgia {
         }
 
 
-        if(chooser.size() != guesser.size()) throw "ERROR! NOT THE SAME SIZE";
+        //if(chooser.size() != guesser.size()) throw "ERROR! NOT THE SAME SIZE";
 
        for ( int i = 0; i < chooser.length() ; i++){
            if (chooser.at(i) == guesser.at(i)) {
