@@ -12,7 +12,7 @@ namespace bullpgia {
         int pgia = 0;
         int check[10];
 
-        if (guesser.length() == chooser.length()) {
+        if (chooser.length() == guesser.length()) {
             for (int i = 0; i < 10; i++) {
                 check[i] = 0;
             }
@@ -57,9 +57,9 @@ namespace bullpgia {
 
             return result;
         }
-
-        else {cout<< "not equal";}
+        else { return "not equal;"}
     }
+
 }
 
 
