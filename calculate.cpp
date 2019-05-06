@@ -58,7 +58,7 @@ namespace bullpgia {
             return result;
         }
         else {
-            cout << " the choose is : " + chooser + "the guess is : " + guesser << endl;
+            cout << " the choose is : " + chooser + " \nthe guess is : " + guesser << endl;
             return "not equal";
         }
     }
