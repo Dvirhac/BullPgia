@@ -35,7 +35,7 @@ namespace bullpgia {
 
             for (int i = 0; i < chooser.size(); i++) {
                 for (int j = 0; j < guesser.size(); j++) {
-                    if (chooser[i] == guesser[i]) { //check for hits
+                    if (chooser[i] == guesser[j]) { //check for hits
                         char temp = chooser[i];
                         int temp2 = (int) temp - 48;
                         if (check[temp2] > 0) {
