@@ -57,7 +57,7 @@ namespace bullpgia {
 
             return result;
         }
-        else { return "not equal;"}
+        else { return "not equal";}
     }
 
 }
