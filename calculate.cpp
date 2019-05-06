@@ -18,7 +18,7 @@ namespace bullpgia {
             }
 
             for (int i = 0; i < chooser.length(); i++) {
-                if (chooser.at(i) == guesser.at(i)) {
+                if (chooser[i] == guesser[i]) {
                     bull++;
                     chooser.erase(i, 1);
                     guesser.erase(i, 1);
@@ -27,7 +27,7 @@ namespace bullpgia {
             }
 
             for (int i = 0; i < guesser.size(); i++) {
-                char tempChar = guesser.at(i);
+                char tempChar = guesser[i];
                 int tempInt = (int) tempChar - 48;
                 check[tempInt]++;
             }
@@ -35,8 +35,8 @@ namespace bullpgia {
 
             for (int i = 0; i < chooser.size(); i++) {
                 for (int j = 0; j < guesser.size(); j++) {
-                    if (chooser.at(i) == guesser.at(j)) { //check for hits
-                        char temp = chooser.at(i);
+                    if (chooser[i] == guesser[j]) { //check for hits
+                        char temp = chooser[i];
                         int temp2 = (int) temp - 48;
                         if (check[temp2] > 0) {
                             pgia++;
