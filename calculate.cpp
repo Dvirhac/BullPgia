@@ -12,13 +12,13 @@ namespace bullpgia {
         int pgia = 0;
         int check[10];
 
-        if (chooser.length() == guesser.length()) {
+        //if (chooser.length() == guesser.length()) {
             for (int i = 0; i < 10; i++) {
                 check[i] = 0;
             }
 
             for (int i = 0; i < chooser.length(); i++) {
-                if (chooser.at(i) == guesser.at(i)) {
+                if (chooser[i] == guesser[i]) {
                     bull++;
                     chooser.erase(i, 1);
                     guesser.erase(i, 1);
@@ -27,7 +27,7 @@ namespace bullpgia {
             }
 
             for (int i = 0; i < guesser.size(); i++) {
-                char tempChar = guesser.at(i);
+                char tempChar = guesser[i];
                 int tempInt = (int) tempChar - 48;
                 check[tempInt]++;
             }
@@ -35,8 +35,8 @@ namespace bullpgia {
 
             for (int i = 0; i < chooser.size(); i++) {
                 for (int j = 0; j < guesser.size(); j++) {
-                    if (chooser.at(i) == guesser.at(j)) { //check for hits
-                        char temp = chooser.at(i);
+                    if (chooser[i] == guesser[i]) { //check for hits
+                        char temp = chooser[i];
                         int temp2 = (int) temp - 48;
                         if (check[temp2] > 0) {
                             pgia++;
@@ -56,11 +56,11 @@ namespace bullpgia {
             result = to_string(bull) + "," + to_string(pgia);
 
             return result;
-        }
-        else {
-            cout << " the choose is : " + chooser + " \nthe guess is : " + guesser << endl;
-            return "not equal";
-        }
+        //}
+       // else {
+           // cout << " the choose is : " + chooser + " \n the guess is : " + guesser << endl;
+            //return "not equal";
+        //}
     }
 
 }
