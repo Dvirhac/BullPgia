@@ -35,6 +35,7 @@ int main() {
 
 
         testcase.setname("Calculate bull and pgia")
+
                 .CHECK_OUTPUT(calculateBullAndPgia("2552","2222"), "2,0")
                 .CHECK_OUTPUT(calculateBullAndPgia("1234","1234"), "4,0")      // 4 bull, 0 pgia
                 .CHECK_OUTPUT(calculateBullAndPgia("1256","1278"), "2,0")      // 0 bull, 4 pgia
